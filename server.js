@@ -11,7 +11,7 @@ app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:str', (request, response) => {
+app.get('https://git.heroku.com/random-choice-api.git//api/:str', (request, response) => {
     const arr = request.params.str.split(' ');
     const arrLength = arr.length;
 
